@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>AceWeather</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AceWeather</h1>
+
+        <form class="change-location">
+            <label for="city">Enter a location for weather information..</label>
+            <input type="text" name="city" class="form-control">
+        </form>
+
+        <div class="card d-none" >
+            <img src="https://via.placeholder.com/400x300" class="time">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="details">
+                <h5>${cityData.EnglishName}</h5>
+        <div>${weather.WeatherText}</div>
+        <div class="display-4">
+            <span>${weather.Temperature.Metric.Value}</span>
+            <span>&deg;C</span>
+        </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
